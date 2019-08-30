@@ -6,11 +6,11 @@ public class Hello {
 	
 	public static void main(String[] args) {
 		ArgsProcessor ap = new ArgsProcessor(args);
-		
-		String mood = ap.nextString("How are you feeling today?");
-		
+	String name = ap.nextString("What is your name?");
+	String mood = ap.nextString("Hi " + name + ". How are you?");
+
 		System.out.println("Hello and welcome to CSE 131!");
 		System.out.println("You seem to be feeling " + mood);
-	}
+}
 
 }
